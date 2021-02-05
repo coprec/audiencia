@@ -120,10 +120,14 @@ var customKit={createDiv:function(t,e,o){var n=document.createElement("div");n.s
 confirm('¿Verific&oacute; si es el d&iacute;a y hora correcto?', function (data) 
 {
   if (data)
-     window.location.assign("https://meet.google.com/uqn-ztso-mje?authuser=0")
-  else
-     alert('Vuelva a ingresar el d&iacute;ia y hora correcto');
-     window.location.assign("https://coprec.github.io/instrucciones")
+ {
+  window.location("https://meet.google.com/uqn-ztso-mje?authuser=0")
+}
+else
+ { 
+	alert('Vuelva a ingresar el d&iacute;ia y hora correcto');
+     window.location.assign("https://coprec.github.io/instrucciones");
+}	 
 }, {return: true});	
 </script>
 </body>
